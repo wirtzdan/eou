@@ -14,7 +14,7 @@ function IndexPage() {
       transition: {
         delay: 0.25,
         when: "beforeChildren",
-        staggerChildren: 0.25
+        staggerChildren: 0.5
       }
     }
   };
