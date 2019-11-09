@@ -2,8 +2,23 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Portrait from "../components/portrait";
+import { motion } from "framer-motion";
 
 function IndexPage() {
+  const PortaitContainer = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: 0.25,
+        when: "beforeChildren",
+        staggerChildren: 0.25
+      }
+    }
+  };
+
   return (
     <Layout>
       <SEO
@@ -11,11 +26,19 @@ function IndexPage() {
         title="Home"
       />
 
-      <section className="text-center">
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-      </section>
+      <motion.section
+        variants={PortaitContainer}
+        initial="hidden"
+        animate="visible"
+        className="flex flex-wrap -mx-5 overflow-hidden"
+      >
+        <Portrait />
+        <Portrait />
+        <Portrait />
+        <Portrait />
+        <Portrait />
+        <Portrait />
+      </motion.section>
     </Layout>
   );
 }
