@@ -49,6 +49,12 @@ module.exports = {
       contents: "contents",
       opacity: "opacity",
       transform: "transform"
+    },
+    extend: {
+      fontFamily: {
+        display: ['"Marcellus"'],
+        body: ['"Open Sans"']
+      }
     }
   },
   variants: {
