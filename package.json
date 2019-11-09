@@ -4,6 +4,7 @@
   "version": "3.0.141",
   "author": "Taylor Bryant <taylor@bryant.io>",
   "dependencies": {
+    "framer-motion": "^1.6.15",
     "gatsby": "2.17.10",
     "gatsby-plugin-manifest": "2.2.26",
     "gatsby-plugin-postcss": "2.1.13",
@@ -14,6 +15,7 @@
     "prop-types": "15.7.2",
     "react": "16.11.0",
     "react-dom": "16.11.0",
+    "react-feather": "^2.0.3",
     "react-helmet": "5.2.1",
     "tailwindcss-transitions": "^2.1.0"
   },
